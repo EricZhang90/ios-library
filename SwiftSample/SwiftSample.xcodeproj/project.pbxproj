@@ -27,8 +27,6 @@
 		CCDA35B31B8D233A00950AD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDA35B11B8D233A00950AD5 /* LaunchScreen.storyboard */; };
 		CCDA35C41B8D237300950AD5 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCDA35C31B8D237300950AD5 /* AirshipConfig.plist */; };
 		CCDA35D31B8D277900950AD5 /* AirshipKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CCDA35CA1B8D265B00950AD5 /* AirshipKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DF4E494F221D96CB00F306A5 /* AirshipDebugKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE70167212F244400A708D5 /* AirshipDebugKit.framework */; };
-		DF4E499C221F387400F306A5 /* AirshipDebugKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFE70167212F244400A708D5 /* AirshipDebugKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,20 +149,6 @@
 			remoteGlobalIDString = 494DD9561B0EB677009C134E;
 			remoteInfo = AirshipKit;
 		};
-		DF4E4950221D96FF00F306A5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DFE70161212F244400A708D5 /* AirshipDebugKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DFE7011E212F1FAA00A708D5;
-			remoteInfo = AirshipDebugKit;
-		};
-		DFE70166212F244400A708D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DFE70161212F244400A708D5 /* AirshipDebugKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DFE7011F212F1FAA00A708D5;
-			remoteInfo = AirshipDebugKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -194,7 +178,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DF4E499C221F387400F306A5 /* AirshipDebugKit.framework in Embed Frameworks */,
 				3C20762A225C1AA100C19D08 /* AirshipLocationKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -239,7 +222,6 @@
 		CCDA35B41B8D233A00950AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCDA35C31B8D237300950AD5 /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
 		CCDA35C51B8D265B00950AD5 /* AirshipKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirshipKit.xcodeproj; path = ../AirshipKit/AirshipKit.xcodeproj; sourceTree = "<group>"; };
-		DFE70161212F244400A708D5 /* AirshipDebugKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirshipDebugKit.xcodeproj; path = ../AirshipDebugKit/AirshipDebugKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,7 +244,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF4E494F221D96CB00F306A5 /* AirshipDebugKit.framework in Frameworks */,
 				3C207629225C1AA100C19D08 /* AirshipLocationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +316,6 @@
 				3C20761A225C1A8800C19D08 /* AirshipLocationKit.xcodeproj */,
 				CCDA35C51B8D265B00950AD5 /* AirshipKit.xcodeproj */,
 				49251DDE1D6F987600EED4BD /* AirshipAppExtensions.xcodeproj */,
-				DFE70161212F244400A708D5 /* AirshipDebugKit.xcodeproj */,
 				CCDA35A51B8D233A00950AD5 /* SwiftSample */,
 				49251DEC1D6F9C1500EED4BD /* SampleServiceExtension */,
 				CCDA35C31B8D237300950AD5 /* AirshipConfig.plist */,
@@ -392,14 +372,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DFE70162212F244400A708D5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DFE70167212F244400A708D5 /* AirshipDebugKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -453,7 +425,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DF4E4951221D96FF00F306A5 /* PBXTargetDependency */,
 				CCDA35CE1B8D269700950AD5 /* PBXTargetDependency */,
 				61E30D881DDE33AB00B7EE28 /* PBXTargetDependency */,
 				49251DF11D6F9C1500EED4BD /* PBXTargetDependency */,
@@ -524,10 +495,6 @@
 				{
 					ProductGroup = 49251DDF1D6F987600EED4BD /* Products */;
 					ProjectRef = 49251DDE1D6F987600EED4BD /* AirshipAppExtensions.xcodeproj */;
-				},
-				{
-					ProductGroup = DFE70162212F244400A708D5 /* Products */;
-					ProjectRef = DFE70161212F244400A708D5 /* AirshipDebugKit.xcodeproj */;
 				},
 				{
 					ProductGroup = CCDA35C61B8D265B00950AD5 /* Products */;
@@ -632,13 +599,6 @@
 			remoteRef = CCDA35C91B8D265B00950AD5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DFE70167212F244400A708D5 /* AirshipDebugKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AirshipDebugKit.framework;
-			remoteRef = DFE70166212F244400A708D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -728,11 +688,6 @@
 			isa = PBXTargetDependency;
 			name = AirshipKit;
 			targetProxy = CCDA35CD1B8D269700950AD5 /* PBXContainerItemProxy */;
-		};
-		DF4E4951221D96FF00F306A5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AirshipDebugKit;
-			targetProxy = DF4E4950221D96FF00F306A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
